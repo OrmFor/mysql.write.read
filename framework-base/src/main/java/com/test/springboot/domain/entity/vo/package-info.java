@@ -1,0 +1,1 @@
+package com.test.springboot.domain.entity.vo;

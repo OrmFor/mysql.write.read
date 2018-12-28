@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="framework-base" />
+        <module name="framework-core" />
+        <module name="framework-quartz" />
+        <module name="framework-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="framework-base" target="1.7" />
+      <module name="framework-core" target="1.7" />
+      <module name="framework-quartz" target="1.6" />
+      <module name="framework-web" target="1.6" />
+      <module name="mysql.write.read" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
