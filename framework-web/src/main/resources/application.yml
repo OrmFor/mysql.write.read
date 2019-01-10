@@ -82,3 +82,7 @@ spring:
     password: foobared
     host: 127.0.0.1
     database: 15
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
