@@ -31,10 +31,10 @@
         </dependency>
 
 
-        <dependency>
+       <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -64,19 +64,19 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
         </dependency>
-        <!-- asponse读取word文件 -->
+<!--        &lt;!&ndash; asponse读取word文件 &ndash;&gt;
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-words</artifactId>
             <version>18.9</version>
-            <systemPath>${basedir}/lib/aspose-words-18.9-jdk16.jar</systemPath>
-            <scope>system</scope>
+            &lt;!&ndash;<systemPath>${basedir}/lib/aspose-words-18.9-jdk16.jar</systemPath>
+            <scope>system</scope>&ndash;&gt;
         </dependency>
         <dependency>
             <groupId>com.jacob</groupId>
             <artifactId>jacob</artifactId>
             <version>1.18</version>
-        </dependency>
+        </dependency>-->
 
         <!--读取文件  -->
         <dependency>

@@ -1,3 +1,4 @@
+import JmsTest.BaseTest;
 import com.test.springboot.redis.RedisUtil;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

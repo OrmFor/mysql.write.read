@@ -77,6 +77,14 @@ spring:
     broker-url: tcp://127.0.0.1:61616
     user: admin
     password: admin
+    pool:
+      configuration:
+        max-connections: 10
+        maximum-active-session-per-connection: 10
+        messageCountPerSession2Send: 10000
+        time-between-expiration-check-millis: 2000
+      enabled: true
+
   redis:
     port: 6379
     password: foobared

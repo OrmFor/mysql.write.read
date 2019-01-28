@@ -22,7 +22,6 @@ public class SysUserImpl extends BaseServiceImpl<SysUser, SysUserMapper, Integer
         return sysUserMapper;
     }
 
-
     @Autowired
     private JmsProducer producer;
 
@@ -38,11 +37,11 @@ public class SysUserImpl extends BaseServiceImpl<SysUser, SysUserMapper, Integer
             condi.setId(sysUser.getId());
             sysUser.setUserName(sysUser.getUserName()+"9");
             this.updateByCondition(sysUser,condi);
-           /* if(i==3){
+            if(i==3){
                 producer.sendMsg("testext.error","insert第"+i+"条error,数据回滚");
 
                 throw new Exception("error");
-            }*/
+            }
             producer.sendMsg("testext.insert","insert第"+i+"条");
             i++;
         }
