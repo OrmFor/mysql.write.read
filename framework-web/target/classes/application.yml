@@ -1,0 +1,96 @@
+logging:
+  config: classpath:logback.xml
+server:
+  port: 8081
+  session-timeout: 60
+mybatis:
+     mapperLocations: classpath:mybatis/*/*.xml
+     typeAliasesPackage: com.test.springboot.domain
+     mapperScanPackage: com.test.springboot.dao
+     configLocation: classpath:mybatis-config.xml
+mysql:
+    datasource:
+        readSize: 2  #读库个数
+        type: com.alibaba.druid.pool.DruidDataSource
+        mapperLocations: classpath*:com/test/springboot/dao/*.xml
+        configLocation: classpath*:mybatis-config.xml
+        write:
+           url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8
+           username: root
+           password: password
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat
+        read01:
+           url: jdbc:mysql://127.0.0.1:3307/test?useUnicode=true&amp;characterEncoding=utf-8
+           username: root
+           password: password
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat
+        read02:
+           url: jdbc:mysql://127.0.0.1:3308/test?useUnicode=true&amp;characterEncoding=utf-8
+           username: root
+           password: password
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat
+spring:
+  activemq:
+  #broker-url: <value>failover:(tcp://192.168.10.188:61616,tcp://192.168.10.189:61616)</value>
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    pool:
+      configuration:
+        max-connections: 10
+        maximum-active-session-per-connection: 10
+        messageCountPerSession2Send: 10000
+        time-between-expiration-check-millis: 2000
+      enabled: true
+
+  redis:
+    port: 6379
+    password: foobared
+    host: 127.0.0.1
+    database: 15
+  mvc:
+    view:
+      prefix: /
+      suffix: .html

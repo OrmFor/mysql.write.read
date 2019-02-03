@@ -1,0 +1,8 @@
+com\test\springboot\config\jms\QueueSender.class
+com\test\springboot\config\jms\UserQueueSender.class
+com\test\springboot\controller\base\BaseController.class
+com\test\springboot\config\jms\UserService.class
+com\test\springboot\config\jms\JmsConfig.class
+com\test\springboot\config\jms\UserModel.class
+com\test\springboot\Application.class
+com\test\springboot\controller\SysUserController.class

@@ -111,6 +111,7 @@ public class SysUserController extends BaseController {
         u.setUserName(jsonObject.getString("userName"));
 
         List<SysUser> list = null;
+        System.out.println(sysUserService);
         try {
             list = sysUserService.wirteAndRead(u);
         } catch (Exception e) {

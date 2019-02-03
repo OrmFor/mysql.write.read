@@ -9,11 +9,13 @@ import com.test.springboot.service.base.BaseServiceImpl;
 import com.test.springboot.service.base.jms.JmsProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 
-@Service
+@Service("sysUser")
 public class SysUserImpl extends BaseServiceImpl<SysUser, SysUserMapper, Integer> implements ISysUser {
     @Autowired
     private SysUserMapper sysUserMapper;

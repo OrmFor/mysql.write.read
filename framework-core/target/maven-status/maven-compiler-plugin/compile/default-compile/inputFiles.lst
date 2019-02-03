@@ -1,0 +1,14 @@
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\core\StatusCode.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\SysUser.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\SysTaskLog.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\redis\RedisUtil.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\entity\SysTaskHandelEntity.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\service\base\jms\JmsProducer.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\service\impl\SysUserImpl.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\core\ResultCode.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\entity\SysUserEntity.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\service\ISysUser.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\dao\SysUserMapper.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\SysTaskHandel.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\domain\entity\SysTaskLogEntity.java
+F:\codeDemo\SpringCloudDemo\springboot\framework-core\src\main\java\com\test\springboot\config\redis\RedisConfiguration.java
