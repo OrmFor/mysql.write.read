@@ -29,7 +29,7 @@ public class SysUserImpl extends BaseServiceImpl<SysUser, SysUserMapper, Integer
 
     @Override
     @WriteDataSource
-   // @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     public List<SysUser> wirteAndRead(SysUser u) throws Exception {
         sysUserMapper.insert(u);
         List<SysUser> list = this.getList();

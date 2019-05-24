@@ -9,6 +9,8 @@ import com.test.springboot.page.Page;
 import com.test.springboot.page.PageUtil;
 import com.test.springboot.util.BeanConverter;
 import com.test.springboot.util.Method;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -114,6 +116,7 @@ public abstract class BaseServiceImpl<T, DAO extends BaseDao<T, PK>, PK extends 
     }
 
     @WriteDataSource
+   // @Transactional(propagation = Propagation.REQUIRED , rollbackFor = Exception.class)
     public int updateByCondition(T record, T condition) {
         Map<String, Object> params =new HashMap<>();
         params.put("entity", record);

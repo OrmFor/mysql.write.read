@@ -94,3 +94,5 @@ spring:
     view:
       prefix: /
       suffix: .html
+  aop:
+    proxy-target-class: true #开启这个事物嵌套才会有效@Transactional
